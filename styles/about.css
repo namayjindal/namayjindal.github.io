@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.3em;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.top-left-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 150px auto 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0 1.5em;
+}
+
+.contacts {
+    margin-top: 40px;
+}
+
+.contacts a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 15px;
+}
+
+.contacts a::after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+}
+
+/* Updated styles for about page */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.profile-picture {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 2em;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.spotify-section, .photo-gallery {
+    margin-top: 3em;
+}
+
+#vsco-embed {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    .container {
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Custom cursor styles */
+.custom-cursor-page {
+    cursor: none;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+}
+
+/* Color changing animation */
+@keyframes changeColor {
+    0% { background-color: #FFB726; }
+    25% { background-color: #E63946; }
+    50% { background-color: #8AFAFF; }
+    75% { background-color: #DAFF7D; }
+    100% { background-color: #02CDAE; }
+}
+
+.custom-cursor.animated {
+    animation: changeColor 5s infinite;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Add space for the fixed header */
+    }
+
+    .top-left-image {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro {
+        max-width: 90%;
+    }
+
+    /* Responsive Spotify Embed */
+    .spotify-section iframe {
+        width: 100%;
+        height: 700px; /* Adjust height as needed */
+    }
+
+    /* Hide custom cursor on mobile devices */
+    .custom-cursor-page {
+        cursor: default;
+    }
+
+    .custom-cursor {
+        display: none;
+    }
+
+}
