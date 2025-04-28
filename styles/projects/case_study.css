@@ -63,6 +63,15 @@ nav a:hover {
     margin: 0.5em 0;
 }
 
+.case-study-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.case-study-container a:hover {
+    color: #cccccc; /* Light gray on hover for better user experience */
+}
+
 
 
 /* Custom cursor styles */

@@ -58,6 +58,15 @@ body::before {
     padding-top: 150px; /* Adjust this value to match your header height */
 }
 
+.experience-text a {
+    color: white;
+    text-decoration: underline;
+}
+
+.experience-text a:hover {
+    color: #cccccc; /* Light gray on hover for better user experience */
+}
+
 .experience-item {
     display: flex;
     justify-content: space-between;
