@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namay's Portfolio - Bahar</title>
+    <link rel="stylesheet" href="/styles/projects/case_study.css">
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html"><img src="/assets/logo.png" alt="Small icon" class="top-left-image"></a>
+    <nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <a href="/html/about.html">about</a>
+            <a href="/html/projects.html">projects</a>
+            <a href="/html/experience.html">experience</a>
+        </div>
+    </nav>
+    <div class="case-study-container">
+        <h1>Bahar</h1>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>In Feb 2025, I reached out to this company called <a href="https://get.corner.inc/">corner</a> because I was obsessed with their product. They got back to me immediately, and gave me an extremely fun take-home project that involved building a robust web scraping system that would gather information from various sources on the internet (such as Google Maps, Resy, Opentable, OpenStreetMap etc.) and then build a RAG system on top of it. I eventually adapted the project to my won use case by building a UI and also a deployed website. While there's some minor details that still need to be worked out, I decided to call this project 'Bahar' - a word that means both 'outside' and the season 'spring' depending on which syllable you emphasize. These both resonate with me as the point of the project was to help people find the places they could spend time outside at.</p>
+        </section>
+        <section class="problem-statement">
+            <h2>Web Scraping Github Repository</h2>
+            <p>This is the github repository that has all my code for the web scraping part of the project - <a href="https://github.com/namayjindal/corner_web_scraping">Web scraping repo</a></p>
+        </section>
+        <section class="solution">
+            <h2>RAG System UI Repository</h2>
+            <p>I take the combined_data.json file from the web scraping github repository and used that to create a Postgres database with all the required embeddings using pgvector, and built a simple minimal frontend system for the same. Here's the link to the Github repository with all my code for this - <a href="https://github.com/namayjindal/corner-app">RAG System and Frontend Repo</a></p>
+        </section>
+        <section class="results">
+            <h2>Deployed Web App</h2>
+            <p>The deployed web app can be found here (might take some time to load due to Render acting annoying for free instances)- <a href="https://corner-app-1k8n.onrender.com/">Bahar Deployed App</a></p>
+        </section>
+    </div>
+    <script src="/scripts/projects.js"></script>
+    <div class="custom-cursor"></div>
+</body>
+</html>
