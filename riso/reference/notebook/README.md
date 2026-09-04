@@ -124,11 +124,13 @@ Transcribed below so the intent is greppable. Where a word was ambiguous it is m
 Key notes on the sketch:
 
 - the logo gets its own **hover animation**, and the story behind it (made it at 14/15)
-  is worth telling on the page.
+  is worth telling on the page. It came out of Japanese/Asian type — compact, edgy,
+  nightclub.
 - the softboard is the hero. post-its are the navigation; **clicking one takes you to
   that section.**
-- typographic register: *"inspired by cool japanese/asian types and their compactness,
-  very edgy nightclub vibe."*
+- *"inspired by cool japanese/asian types and their compactness, very edgy nightclub
+  vibe."* **This describes the logo**, not the site's body typography — it is the register
+  the mark itself came out of.
 - below the fold is a **scroll page**, not a second screen: a big random riso fruit
   illustration (possibly a small game), then snippet rows for **media**, **tinkerings**
   and **writings**, each with a "see more →".

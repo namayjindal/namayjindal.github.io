@@ -100,7 +100,7 @@
    "z": 1
   },
   {
-   "id": "media-shadow",
+   "id": "visions-shadow",
    "x": 990,
    "y": 355,
    "w": 218,
@@ -110,7 +110,7 @@
    "z": 1
   },
   {
-   "id": "projects-shadow",
+   "id": "tinkerings-shadow",
    "x": 605,
    "y": 756,
    "w": 234,
@@ -120,7 +120,7 @@
    "z": 1
   },
   {
-   "id": "now-shadow",
+   "id": "musings-shadow",
    "x": 870,
    "y": 769,
    "w": 224,
@@ -330,33 +330,33 @@
    "z": 2
   },
   {
-   "id": "media",
+   "id": "visions",
    "x": 980,
    "y": 343,
    "w": 218,
    "h": 246,
    "blend": "normal",
-   "hover": "media",
+   "hover": "visions",
    "z": 2
   },
   {
-   "id": "projects",
+   "id": "tinkerings",
    "x": 595,
    "y": 744,
    "w": 234,
    "h": 260,
    "blend": "normal",
-   "hover": "projects",
+   "hover": "tinkerings",
    "z": 2
   },
   {
-   "id": "now",
+   "id": "musings",
    "x": 860,
    "y": 756,
    "w": 224,
    "h": 250,
    "blend": "normal",
-   "hover": "now",
+   "hover": "musings",
    "z": 2
   },
   {
@@ -570,7 +570,7 @@
    "z": 3
   },
   {
-   "id": "pin-media",
+   "id": "pin-visions",
    "x": 1100,
    "y": 350,
    "w": 24,
@@ -580,7 +580,7 @@
    "z": 3
   },
   {
-   "id": "pin-projects",
+   "id": "pin-tinkerings",
    "x": 735,
    "y": 750,
    "w": 24,
@@ -590,7 +590,7 @@
    "z": 3
   },
   {
-   "id": "pin-now",
+   "id": "pin-musings",
    "x": 961,
    "y": 764,
    "w": 24,

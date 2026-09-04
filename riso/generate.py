@@ -45,6 +45,7 @@ manifest.json records id, position, size, blend and hover target for each.
 """
 import json
 import sys
+import zlib
 from pathlib import Path
 
 import numpy as np
@@ -230,8 +231,15 @@ def note(n):
             d.line((16, i, ww - 16, i), fill=255, width=2)
 
     def text(d, ww, hh):
-        d.text((18, 16), n["title"], font=font(F_HAND, 46), fill=255)
-        d.line((18, 70, 18 + int(len(n["title"]) * 15.5), 70), fill=255, width=3)
+        # shrink the title until it fits the note, so a long room name never clips
+        size = 46
+        while size > 22 and d.textlength(n["title"], font=font(F_HAND, size)) > ww - 36:
+            size -= 1
+        f = font(F_HAND, size)
+        d.text((18, 16), n["title"], font=f, fill=255)
+        rule = 16 + size + 8
+        d.line((18, rule, 18 + int(d.textlength(n["title"], font=f)), rule),
+               fill=255, width=3)
         for i, ln in enumerate(n["lines"]):
             d.text((20, 86 + i * 34), ln, font=font(F_HAND, 32), fill=255)
 
@@ -245,7 +253,7 @@ def note(n):
               blend="multiply", z=1),
            El(n["id"], inks, substrate=sil, hover=n["id"], z=2)]
     out.append(pin(x + w // 2 + int(rng.integers(-40, 40)), y + 14,
-                   ["red", "blue", "green", "orange"][abs(hash(n["id"])) % 4], n["id"]))
+                   ["red", "blue", "green", "orange"][zlib.crc32(n["id"].encode()) % 4], n["id"]))
     return out
 
 

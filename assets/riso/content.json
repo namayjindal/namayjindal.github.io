@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the board. generate.py reads geometry + note text; the site reads section copy. Body copy below is PLACEHOLDER - Namay, edit freely, then re-run generate.py.",
   "name": "namay",
-  "tagline": "product \u00b7 code \u00b7 new york",
+  "tagline": "product · code · new york",
   "blurb": "a softboard of the things i care about.",
   "hint": "hover a note. click to open.",
   "contacts": [
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "id": "media",
+      "id": "visions",
       "kind": "note",
       "x": 986,
       "y": 348,
@@ -69,20 +69,20 @@
       "h": 236,
       "rot": -3.0,
       "ink": "aqua",
-      "title": "MEDIA",
+      "title": "VISIONS",
       "lines": [
-        "- reading",
-        "- albums",
-        "- films"
+        "- photos",
+        "- edits",
+        "- videos"
       ],
-      "heading": "media",
+      "heading": "visions",
       "body": [
-        "PLACEHOLDER - what you are reading, listening to, watching.",
-        "the point of this note is that it changes often."
+        "PLACEHOLDER - photos, edits and videos i actually made and am proud of.",
+        "not a feed. a small number of things worth looking at twice."
       ]
     },
     {
-      "id": "projects",
+      "id": "tinkerings",
       "kind": "note",
       "x": 600,
       "y": 748,
@@ -90,21 +90,21 @@
       "h": 252,
       "rot": -2.2,
       "ink": "mint",
-      "title": "PROJECTS",
+      "title": "TINKERINGS",
       "lines": [
         "- this site",
         "- era agent",
         "- small tools"
       ],
-      "heading": "projects",
+      "heading": "tinkerings",
       "body": [
-        "PLACEHOLDER - the fun ones, not the resume ones.",
+        "PLACEHOLDER - side projects. the fun ones, not the resume ones.",
         "this site: a risograph print of my softboard, generated in python.",
         "era agent: a financial agent built on the era context mcp."
       ]
     },
     {
-      "id": "now",
+      "id": "musings",
       "kind": "note",
       "x": 866,
       "y": 762,
@@ -112,16 +112,16 @@
       "h": 238,
       "rot": 3.2,
       "ink": "sunflower",
-      "title": "NOW",
+      "title": "MUSINGS",
       "lines": [
-        "- learning design",
-        "- gym",
-        "- roadtrip?"
+        "- embeddings",
+        "- wine",
+        "- type"
       ],
-      "heading": "now",
+      "heading": "musings",
       "body": [
-        "PLACEHOLDER - what has your attention this month.",
-        "learning ui design so i can build my own things end to end."
+        "PLACEHOLDER - writing. casual, analogy heavy, diagrams over formulas.",
+        "explaining a thing to myself properly is the whole point."
       ]
     }
   ],
