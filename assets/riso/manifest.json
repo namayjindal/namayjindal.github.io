@@ -1,0 +1,634 @@
+{
+ "canvas": [
+  1800,
+  1150
+ ],
+ "paper": [
+  245,
+  237,
+  221
+ ],
+ "elements": [
+  {
+   "id": "board",
+   "x": 556,
+   "y": 62,
+   "w": 1193,
+   "h": 1031,
+   "blend": "normal",
+   "hover": null,
+   "z": 0
+  },
+  {
+   "id": "art-paris-shadow",
+   "x": 611,
+   "y": 136,
+   "w": 312,
+   "h": 226,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-rings-shadow",
+   "x": 975,
+   "y": 124,
+   "w": 274,
+   "h": 198,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-abstract-shadow",
+   "x": 1325,
+   "y": 117,
+   "w": 362,
+   "h": 336,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-nyc-shadow",
+   "x": 1469,
+   "y": 478,
+   "w": 230,
+   "h": 180,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-photo-shadow",
+   "x": 1003,
+   "y": 626,
+   "w": 162,
+   "h": 202,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-pad-shadow",
+   "x": 1131,
+   "y": 853,
+   "w": 166,
+   "h": 216,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "about-shadow",
+   "x": 605,
+   "y": 400,
+   "w": 358,
+   "h": 326,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "work-shadow",
+   "x": 1211,
+   "y": 470,
+   "w": 218,
+   "h": 252,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "media-shadow",
+   "x": 990,
+   "y": 355,
+   "w": 218,
+   "h": 246,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "projects-shadow",
+   "x": 605,
+   "y": 756,
+   "w": 234,
+   "h": 260,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "now-shadow",
+   "x": 870,
+   "y": 769,
+   "w": 224,
+   "h": 248,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-0-shadow",
+   "x": 1358,
+   "y": 707,
+   "w": 62,
+   "h": 62,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-1-shadow",
+   "x": 1438,
+   "y": 693,
+   "w": 74,
+   "h": 74,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-2-shadow",
+   "x": 1530,
+   "y": 701,
+   "w": 58,
+   "h": 58,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-3-shadow",
+   "x": 1608,
+   "y": 711,
+   "w": 68,
+   "h": 68,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-4-shadow",
+   "x": 1350,
+   "y": 799,
+   "w": 66,
+   "h": 66,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-5-shadow",
+   "x": 1434,
+   "y": 809,
+   "w": 56,
+   "h": 56,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-6-shadow",
+   "x": 1506,
+   "y": 793,
+   "w": 72,
+   "h": 72,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-7-shadow",
+   "x": 1602,
+   "y": 803,
+   "w": 62,
+   "h": 62,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-8-shadow",
+   "x": 1372,
+   "y": 891,
+   "w": 58,
+   "h": 58,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-9-shadow",
+   "x": 1450,
+   "y": 897,
+   "w": 66,
+   "h": 66,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-10-shadow",
+   "x": 1538,
+   "y": 885,
+   "w": 60,
+   "h": 60,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "badge-11-shadow",
+   "x": 1620,
+   "y": 893,
+   "w": 54,
+   "h": 54,
+   "blend": "multiply",
+   "hover": null,
+   "z": 1
+  },
+  {
+   "id": "art-paris",
+   "x": 601,
+   "y": 124,
+   "w": 312,
+   "h": 226,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "art-rings",
+   "x": 965,
+   "y": 111,
+   "w": 274,
+   "h": 200,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "art-abstract",
+   "x": 1315,
+   "y": 105,
+   "w": 362,
+   "h": 336,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "art-nyc",
+   "x": 1459,
+   "y": 466,
+   "w": 230,
+   "h": 180,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "art-photo",
+   "x": 993,
+   "y": 614,
+   "w": 162,
+   "h": 202,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "art-pad",
+   "x": 1121,
+   "y": 841,
+   "w": 166,
+   "h": 216,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "about",
+   "x": 595,
+   "y": 388,
+   "w": 358,
+   "h": 326,
+   "blend": "normal",
+   "hover": "about",
+   "z": 2
+  },
+  {
+   "id": "work",
+   "x": 1201,
+   "y": 458,
+   "w": 218,
+   "h": 252,
+   "blend": "normal",
+   "hover": "work",
+   "z": 2
+  },
+  {
+   "id": "media",
+   "x": 980,
+   "y": 343,
+   "w": 218,
+   "h": 246,
+   "blend": "normal",
+   "hover": "media",
+   "z": 2
+  },
+  {
+   "id": "projects",
+   "x": 595,
+   "y": 744,
+   "w": 234,
+   "h": 260,
+   "blend": "normal",
+   "hover": "projects",
+   "z": 2
+  },
+  {
+   "id": "now",
+   "x": 860,
+   "y": 756,
+   "w": 224,
+   "h": 250,
+   "blend": "normal",
+   "hover": "now",
+   "z": 2
+  },
+  {
+   "id": "badge-0",
+   "x": 1352,
+   "y": 700,
+   "w": 62,
+   "h": 62,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-1",
+   "x": 1432,
+   "y": 686,
+   "w": 74,
+   "h": 74,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-2",
+   "x": 1524,
+   "y": 694,
+   "w": 58,
+   "h": 58,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-3",
+   "x": 1602,
+   "y": 704,
+   "w": 68,
+   "h": 68,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-4",
+   "x": 1344,
+   "y": 792,
+   "w": 66,
+   "h": 66,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-5",
+   "x": 1428,
+   "y": 802,
+   "w": 56,
+   "h": 56,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-6",
+   "x": 1500,
+   "y": 786,
+   "w": 72,
+   "h": 72,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-7",
+   "x": 1596,
+   "y": 796,
+   "w": 62,
+   "h": 62,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-8",
+   "x": 1366,
+   "y": 884,
+   "w": 58,
+   "h": 58,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-9",
+   "x": 1444,
+   "y": 890,
+   "w": 66,
+   "h": 66,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-10",
+   "x": 1532,
+   "y": 878,
+   "w": 60,
+   "h": 60,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "badge-11",
+   "x": 1614,
+   "y": 886,
+   "w": 54,
+   "h": 54,
+   "blend": "normal",
+   "hover": null,
+   "z": 2
+  },
+  {
+   "id": "pin-paris",
+   "x": 868,
+   "y": 128,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-rings",
+   "x": 1090,
+   "y": 114,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-abs1",
+   "x": 1330,
+   "y": 108,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-abs2",
+   "x": 1636,
+   "y": 110,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-nyc",
+   "x": 1468,
+   "y": 468,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "tape-1",
+   "x": 1130,
+   "y": 591,
+   "w": 100,
+   "h": 60,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-abouta",
+   "x": 620,
+   "y": 392,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-aboutb",
+   "x": 898,
+   "y": 396,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-work",
+   "x": 1332,
+   "y": 464,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-media",
+   "x": 1100,
+   "y": 350,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-projects",
+   "x": 735,
+   "y": 750,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "pin-now",
+   "x": 961,
+   "y": 764,
+   "w": 24,
+   "h": 24,
+   "blend": "normal",
+   "hover": null,
+   "z": 3
+  },
+  {
+   "id": "logo",
+   "x": 74,
+   "y": 92,
+   "w": 96,
+   "h": 96,
+   "blend": "normal",
+   "hover": null,
+   "z": 4
+  },
+  {
+   "id": "type-accent",
+   "x": 60,
+   "y": 319,
+   "w": 420,
+   "h": 76,
+   "blend": "multiply",
+   "hover": null,
+   "z": 4
+  },
+  {
+   "id": "type",
+   "x": 74,
+   "y": 323,
+   "w": 482,
+   "h": 668,
+   "blend": "multiply",
+   "hover": null,
+   "z": 4
+  }
+ ],
+ "ext": "webp"
+}

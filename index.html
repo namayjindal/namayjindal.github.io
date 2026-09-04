@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namay's Portfolio</title>
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>namay</title>
+<meta name="description" content="Namay Jindal — product, code, New York. A risograph print of the softboard from my room.">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="stylesheet" href="/styles/board.css">
+<link rel="preload" as="image" href="/assets/riso/board.webp">
 </head>
 <body>
-    <a href="index.html"><img src="/assets/logo.png" alt="Small icon" class="top-left-image"></a>
-    <nav>
-        <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="nav-links">
-            <a href="/html/about.html">about</a>
-            <a href="/html/projects.html">projects</a>
-            <a href="/html/experience.html">experience</a>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="intro">
-            <span class="dot"></span>
-            <div class="typing-container">
-                <h1 id="typing-animation"></h1>
-            </div>
-            <p>i'm a rising junior at NYU studying Computer and Data Science.</p>
-            <p>i like tinkering around, thinking of ideas in the shower i know i'll never work on, and lazing around in the sun with a glass of freshly squeezed orange juice.</p>
-            <p>it's nice to meet you.</p>
-            <div class="contacts">
-                <a href="https://github.com/namayjindal">github</a>
-                <a href="mailto:namayyjindal@gmail.com">email</a>
-                <a href="https://www.linkedin.com/in/namay-jindal/">linkedin</a>
-            </div>
-        </div>
+  <main class="page">
+    <section class="col" id="col">
+      <a class="logo" href="/"><img src="/assets/riso/logo.webp" alt="namay logo" width="96" height="96"></a>
+      <h1 class="wordmark">namay</h1>
+      <p class="tagline"></p>
+      <p class="blurb"></p>
+      <nav class="jump" aria-label="sections"></nav>
+      <p class="hint"></p>
+      <ul class="contacts"></ul>
+    </section>
+
+    <section class="board-wrap" aria-label="softboard">
+      <div class="stage-fit"><div class="stage" id="stage"></div></div>
+    </section>
+  </main>
+
+  <div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-heading" hidden>
+    <div class="sheet">
+      <button class="close" id="panel-close" aria-label="close">close</button>
+      <h2 id="panel-heading"></h2>
+      <div class="body" id="panel-body"></div>
     </div>
-    <script src="/scripts/index.js"></script>
-    <div class="custom-cursor"></div>
+  </div>
+
+  <script src="/scripts/board.js"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+{
+  "_comment": "Single source of truth for the board. generate.py reads geometry + note text; the site reads section copy. Body copy below is PLACEHOLDER - Namay, edit freely, then re-run generate.py.",
+  "name": "namay",
+  "tagline": "product \u00b7 code \u00b7 new york",
+  "blurb": "a softboard of the things i care about.",
+  "hint": "hover a note. click to open.",
+  "contacts": [
+    {
+      "label": "github",
+      "url": "https://github.com/namayjindal"
+    },
+    {
+      "label": "email",
+      "url": "mailto:namayyjindal@gmail.com"
+    },
+    {
+      "label": "linkedin",
+      "url": "https://www.linkedin.com/in/namay-jindal/"
+    }
+  ],
+  "notes": [
+    {
+      "id": "about",
+      "kind": "manifesto",
+      "x": 598,
+      "y": 392,
+      "w": 352,
+      "h": 318,
+      "rot": 1.2,
+      "ink": "cream",
+      "title": "",
+      "lines": [],
+      "heading": "about",
+      "body": [
+        "i grew up in india and now i build things in new york.",
+        "this page is a copy of the softboard that hung in my room back home. same notes, same pins, printed instead of pinned.",
+        "i like tinkering, ideas in the shower i will never work on, and lazing in the sun with a glass of orange juice.",
+        "it is nice to meet you."
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "note",
+      "x": 1206,
+      "y": 462,
+      "w": 208,
+      "h": 244,
+      "rot": 2.4,
+      "ink": "yellow",
+      "title": "WORK",
+      "lines": [
+        "- corner",
+        "- product eng",
+        "- ios + backend"
+      ],
+      "heading": "work",
+      "body": [
+        "PLACEHOLDER - fill this in.",
+        "corner: product engineering, ios and backend.",
+        "before that: a handful of internships and student teams."
+      ]
+    },
+    {
+      "id": "media",
+      "kind": "note",
+      "x": 986,
+      "y": 348,
+      "w": 206,
+      "h": 236,
+      "rot": -3.0,
+      "ink": "aqua",
+      "title": "MEDIA",
+      "lines": [
+        "- reading",
+        "- albums",
+        "- films"
+      ],
+      "heading": "media",
+      "body": [
+        "PLACEHOLDER - what you are reading, listening to, watching.",
+        "the point of this note is that it changes often."
+      ]
+    },
+    {
+      "id": "projects",
+      "kind": "note",
+      "x": 600,
+      "y": 748,
+      "w": 224,
+      "h": 252,
+      "rot": -2.2,
+      "ink": "mint",
+      "title": "PROJECTS",
+      "lines": [
+        "- this site",
+        "- era agent",
+        "- small tools"
+      ],
+      "heading": "projects",
+      "body": [
+        "PLACEHOLDER - the fun ones, not the resume ones.",
+        "this site: a risograph print of my softboard, generated in python.",
+        "era agent: a financial agent built on the era context mcp."
+      ]
+    },
+    {
+      "id": "now",
+      "kind": "note",
+      "x": 866,
+      "y": 762,
+      "w": 212,
+      "h": 238,
+      "rot": 3.2,
+      "ink": "sunflower",
+      "title": "NOW",
+      "lines": [
+        "- learning design",
+        "- gym",
+        "- roadtrip?"
+      ],
+      "heading": "now",
+      "body": [
+        "PLACEHOLDER - what has your attention this month.",
+        "learning ui design so i can build my own things end to end."
+      ]
+    }
+  ],
+  "manifesto_words": [
+    "i wanna go on a ROADTRIP someday.",
+    "ALONE, or with SOMEONE i LOVE.",
+    "i wanna get AWAY. explore places.",
+    "sleep in the CAR. stop a lot just to",
+    "admire the VIEW. visit museums and",
+    "try cute COFFEE shops. listen to my",
+    "favourite ALBUMS while driving.",
+    "chase FOG. chase the SUN. spend",
+    "hours on a FIELD making flower",
+    "crowns. feel the WIND in my hair.",
+    "meet people. take time to observe.",
+    "i wanna make MEMORIES.",
+    "i wanna FEEL alive."
+  ]
+}
