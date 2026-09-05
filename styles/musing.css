@@ -1,0 +1,176 @@
+/* namay.xyz — a musing
+   Notebook, not blog. The page is a sheet of dotted paper; the drawings are
+   riso layers from riso/musings_*.py; the post-its are paper, not callout boxes.
+   Same rule as board.css: if something needs texture it is generated as ink,
+   never faked with a gradient or a box-shadow. */
+
+@font-face { font-family: "Inter Tight"; src: url("/assets/fonts/InterTight.ttf") format("truetype");
+             font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("/assets/fonts/Caveat.ttf") format("truetype");
+             font-weight: 400 700; font-display: swap; }
+
+:root {
+  --paper: #f5eddd;
+  --ink: #1e1e23;
+  --red: #f15060;
+  --lake: #235ba8;
+  --sunflower: #ffb511;
+  --mint: #62c2b1;
+  --pink: #ff48b0;
+  --col: 660px;          /* the reading column */
+  --gutter: 268px;       /* where post-its live on wide screens */
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter Tight", system-ui, -apple-system, Helvetica, sans-serif;
+  font-size: 18px; line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* paper tooth, same plate the board uses */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url("/assets/riso/tooth-tile.webp");
+  background-size: 256px 256px; mix-blend-mode: multiply; opacity: .9;
+}
+
+/* the dot grid of his actual notebook. scrolls with the paper, unlike the tooth */
+.sheet {
+  position: relative; z-index: 1;
+  background-image: radial-gradient(circle, rgba(30, 30, 35, .16) 1px, transparent 1.4px);
+  background-size: 27px 27px;
+  padding: clamp(24px, 4vw, 64px) clamp(18px, 4vw, 48px) 140px;
+}
+
+.col { max-width: var(--col); margin: 0 auto; }
+
+/* ------------------------------------------------------------------- header */
+.back {
+  display: inline-block; margin-bottom: clamp(28px, 6vh, 60px);
+  font-size: 15px; color: var(--ink); text-decoration: none;
+  border-bottom: 2px solid var(--red); padding-bottom: 1px;
+}
+.back:hover { color: var(--red); }
+
+.kicker {
+  font-family: "Caveat", cursive; font-size: 26px; color: var(--lake);
+  margin: 0 0 4px; transform: rotate(-1.4deg); transform-origin: left center;
+}
+
+h1 {
+  font-size: clamp(46px, 7vw, 82px); font-weight: 640; letter-spacing: -.04em;
+  line-height: .96; margin: 0 0 .3em;
+  text-shadow: 3px -4px 0 rgba(241, 80, 96, .26);   /* off-register ghost, as on the board */
+}
+
+.deck {
+  font-family: "Caveat", cursive; font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.3; margin: 0 0 1.1em; max-width: 30ch;
+}
+
+.meta {
+  font-size: 14px; letter-spacing: .04em; text-transform: lowercase;
+  opacity: .62; margin: 0 0 clamp(36px, 7vh, 76px);
+}
+
+/* -------------------------------------------------------------------- body */
+h2 {
+  font-size: clamp(27px, 3.4vw, 36px); font-weight: 620; letter-spacing: -.025em;
+  line-height: 1.14; margin: 2.4em 0 .1em;
+}
+/* a hand underline, drawn as a squashed ellipse rather than a straight border */
+h2::after {
+  content: ""; display: block; width: 86px; height: 7px; margin-top: 10px;
+  background: var(--red); opacity: .5;
+  border-radius: 50% 40% 55% 45% / 60% 55% 45% 50%;
+}
+
+p { margin: 0 0 1.15em; }
+.col > p:first-of-type { margin-top: 1.2em; }
+
+a { color: var(--lake); text-underline-offset: 3px; }
+
+strong { font-weight: 620; }
+
+ul { margin: 0 0 1.3em; padding-left: 1.1em; }
+li { margin-bottom: .5em; }
+li::marker { color: var(--red); }
+
+/* the one line per section worth keeping. handwriting, so it reads as annotation */
+.aloud {
+  font-family: "Caveat", cursive; font-size: clamp(28px, 3.6vw, 38px);
+  line-height: 1.25; margin: 1.5em 0; padding-left: 18px;
+  border-left: 5px solid var(--sunflower);
+}
+
+/* ----------------------------------------------------------------- drawings */
+.doodle { margin: 2.4em auto; text-align: center; max-width: 100%; }
+.doodle img {
+  display: block; width: 100%; height: auto; margin: 0 auto;
+  mix-blend-mode: multiply;      /* the layers are un-premultiplied for exactly this */
+}
+.doodle figcaption {
+  font-family: "Caveat", cursive; font-size: 23px; opacity: .72; margin-top: 6px;
+}
+.d-soil     { max-width: 560px; }
+.d-grape    { max-width: 620px; }
+.d-skin     { max-width: 860px; }
+.d-spectrum { max-width: 880px; }
+.d-bubbles  { max-width: 480px; }
+
+/* drawings may run wider than the reading column */
+@media (min-width: 900px) {
+  .doodle.break { width: min(92vw, 860px); margin-left: 50%; transform: translateX(-50%); }
+}
+
+/* ----------------------------------------------------------------- post-its */
+/* zero-height anchor: the note pins to this point in the text without taking
+   up a slot in the flow, so paragraphs stay continuous around it */
+.aside { position: relative; }
+
+.postit {
+  position: relative;
+  padding: 20px 22px 24px;
+  font-family: "Caveat", cursive; font-size: 25px; line-height: 1.3;
+  background-color: var(--sunflower);
+  background-image: url("/assets/riso/tooth-tile.webp");
+  background-size: 128px 128px; background-blend-mode: multiply;
+  transform: rotate(-1.6deg);
+  margin: 2em auto; max-width: 340px;
+}
+.postit::before {                       /* the pin */
+  content: ""; position: absolute; top: -9px; left: 50%; width: 17px; height: 17px;
+  border-radius: 50%; background: var(--red); transform: translateX(-50%);
+}
+.postit.mint { background-color: var(--mint); }
+.postit.pink { background-color: #ffa6d4; }
+.postit.pink::before { background: var(--lake); }
+.postit.mint::before { background: var(--sunflower); }
+.postit:nth-of-type(even) { transform: rotate(1.9deg); }
+
+@media (min-width: 1180px) {
+  .aside { height: 0; }
+  .postit {
+    position: absolute; top: -1.4em; width: var(--gutter); max-width: none; margin: 0;
+  }
+  .aside.right .postit { left: calc(50% + var(--col) / 2 + 28px); }
+  .aside.left  .postit { right: calc(50% + var(--col) / 2 + 28px); }
+}
+
+/* ------------------------------------------------------------------- footer */
+.end {
+  margin-top: 4em; padding-top: 1.6em; border-top: 2px solid rgba(30, 30, 35, .18);
+  font-size: 15px; opacity: .7;
+}
+.end a { color: var(--lake); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
